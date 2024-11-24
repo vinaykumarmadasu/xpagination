@@ -19,9 +19,20 @@ table, th, td {
   border: 1px solid #ddd;
 }
 
+/* Change the bottom border color */
+table {
+  border-bottom: 3px solid #4caf50; /* Same as Next button */
+}
+
 th, td {
   padding: 10px;
   text-align: left;
+}
+
+/* Change the color of the header row */
+thead th {
+  background-color: #4caf50; /* Same as Next button */
+  color: white;
 }
 
 .pagination {
@@ -47,4 +58,14 @@ button:disabled {
 
 button:hover:not(:disabled) {
   background-color: #45a049;
+}
+
+/* Change the page number background color and text color */
+.pagination span {
+  background-color: #4caf50; /* Same as Next button */
+  color: white; /* White text */
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 5px;
+  margin: 0 10px;
 }
